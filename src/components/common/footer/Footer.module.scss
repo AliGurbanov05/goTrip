@@ -1,0 +1,13 @@
+.footer{
+    width: 100%;
+    display: flex;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 28, 53);
+
+    h1{
+        color: white;
+        font-size: 40px;
+    }
+}

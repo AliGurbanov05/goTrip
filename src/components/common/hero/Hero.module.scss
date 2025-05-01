@@ -1,0 +1,257 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../../images/h1_hero.jpg");
+
+    .txt {
+        gap: 30px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            color: rgb(253, 224, 47);
+            font-family: "Satisfy";
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 72px;
+
+
+            .underlined {
+                position: relative;
+                z-index: 0;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-image: url("../../../images/hero-_ineShape.png");
+                    height: 31%;
+                    width: 100%;
+                    bottom: 0;
+                    left: -10px;
+                    z-index: -1;
+                }
+            }
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+            font-family: "Barlow Condensed";
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 36px;
+        }
+
+        .inputs {
+            gap: 30px;
+            display: flex;
+            padding: 30px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(255, 255, 255, 0.2);
+
+            input {
+                border-bottom-color: rgb(119, 119, 119);
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-style: none;
+                border-bottom-width: 0px;
+                border-image-outset: 0;
+                border-image-repeat: stretch;
+                border-image-slice: 100%;
+                border-image-source: none;
+                border-image-width: 1;
+                border-left-color: rgb(119, 119, 119);
+                border-left-style: none;
+                border-left-width: 0px;
+                border-right-color: rgb(119, 119, 119);
+                border-right-style: none;
+                border-right-width: 0px;
+                border-top-color: rgb(119, 119, 119);
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-top-style: none;
+                border-top-width: 0px;
+                box-sizing: border-box;
+                color: rgb(119, 119, 119);
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 18px;
+                font-weight: 400;
+                height: 55px;
+                line-height: 27px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
+                margin-top: 0px;
+                overflow-x: clip;
+                overflow-y: clip;
+                padding-bottom: 9px;
+                padding-left: 22px;
+                padding-right: 9px;
+                padding-top: 9px;
+                text-align: start;
+                width: 459px;
+                --blue: #007bff;
+                --breakpoint-lg: 992px;
+                --breakpoint-md: 768px;
+                --breakpoint-sm: 576px;
+                --breakpoint-xl: 1200px;
+                --breakpoint-xs: 0;
+            }
+
+            select {
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-image: none;
+                background-origin: padding-box;
+                background-position-x: 0%;
+                background-position-y: 0%;
+                background-repeat: repeat;
+                background-size: auto;
+                border: none;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-style: solid;
+                border-bottom-width: 0.883333px;
+                border-image-outset: 0;
+                border-image-repeat: stretch;
+                border-image-slice: 100%;
+                border-image-source: none;
+                border-image-width: 1;
+                border-left-style: solid;
+                border-left-width: 0.883333px;
+                border-right-style: solid;
+                border-right-width: 0.883333px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-top-style: solid;
+                border-top-width: 0.883333px;
+                box-sizing: border-box;
+                clear: both;
+                color: rgb(97, 104, 117);
+                cursor: pointer;
+                display: block;
+                float: left;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+                font-size: 14px;
+                font-weight: 400;
+                height: 55px;
+                line-height: 28px;
+                outline-style: none;
+                outline-width: 0px;
+                padding-bottom: 11px;
+                padding-left: 19px;
+                padding-right: 19px;
+                padding-top: 11px;
+                position: relative;
+                text-align: left;
+                text-wrap-mode: nowrap;
+                transition-behavior: normal;
+                transition-delay: 0s;
+                transition-duration: 0.2s;
+                transition-property: all;
+                transition-timing-function: ease-in-out;
+                user-select: none;
+                white-space-collapse: collapse;
+                width: 221px;
+            }
+
+            button {
+                border: none;
+                background-attachment: scroll;
+                background-clip: border-box;
+                background-color: rgb(253, 224, 47);
+                background-image: none;
+                background-origin: padding-box;
+                background-position-x: 0%;
+                background-position-y: 0%;
+                background-repeat: repeat;
+                background-size: auto;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                box-sizing: border-box;
+                color: rgb(0, 0, 0);
+                display: block;
+                font-family: "Barlow Condensed";
+                font-size: 14px;
+                font-weight: 400;
+                height: 55px;
+                letter-spacing: 1.4px;
+                line-height: 24px;
+                outline-color: rgb(0, 0, 0);
+                outline-style: none;
+                outline-width: 0px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+                text-align: center;
+                text-decoration-color: rgb(0, 0, 0);
+                text-decoration-line: none;
+                text-decoration-style: solid;
+                text-decoration-thickness: auto;
+                text-transform: uppercase;
+                transition-behavior: normal;
+                transition-delay: 0s;
+                transition-duration: 0.3s;
+                transition-property: all;
+                transition-timing-function: ease-out;
+                width: 144.5px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    .hero {
+        .txt {
+            width: 90%;
+
+            .title {
+                font-size: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .hero {
+        .txt {
+            width: 100%;
+
+            .title {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            p {
+                font-size: 25px;
+            }
+
+            .inputs {
+                input {
+                    width: 200px;
+                    font-size: 12px;
+                }
+                select{
+                    width: 190px;
+                }
+            }
+        }
+    }
+}

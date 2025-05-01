@@ -1,0 +1,192 @@
+.header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    position: sticky;
+    z-index: 1;
+
+    .top {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: rgb(14, 28, 53);
+
+        .container {
+            width: 70%;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+
+            .info {
+                gap: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    gap: 10px;
+                    display: flex;
+                    align-items: center;
+                    color: rgb(255, 255, 255);
+                    font-family: "Poppins", Arial, sans-serif;
+                    font-size: 11px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    line-height: 19.8px;
+                }
+            }
+
+            .icons {
+                gap: 30px;
+                display: flex;
+                color: white;
+                font-size: 12px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background-color: white;
+
+        .container {
+            width: 70%;
+            display: flex;
+            margin: 0 auto;
+            align-items: center;
+            justify-content: space-between;
+
+            .logo {
+                text-decoration: none;
+                color: rgb(130, 174, 70);
+                display: block;
+                font-family: "Poppins", Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 36px;
+            }
+
+            .nav {
+                ul {
+                    gap: 30px;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+
+                    li {
+                        a {
+                            color: rgb(38, 66, 71);
+                            font-family: "Barlow Condensed";
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 24px;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .hamburger {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+
+                span {
+                    height: 3px;
+                    width: 25px;
+                    background: white;
+                    border-radius: 5px;
+                    transition: 0.3s ease;
+                }
+            }
+
+            .mobileMenu {
+                display: none;
+                flex-direction: column;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+
+                a {
+                    color: white;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-family: "Raleway", sans-serif;
+
+                    &:hover {
+                        color: orange;
+                    }
+                }
+            }
+
+            .mobileMenuActive {
+                display: flex !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    .header {
+        .top {
+            .container {
+                width: 95%;
+
+                .info {
+                    gap: 20px;
+                }
+
+                .icons {
+                    gap: 20px;
+                }
+            }
+        }
+
+        .bottom {
+            .container {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .header {
+        .top {
+            display: none;
+        }
+
+        .bottom {
+            background-color: black;
+
+            .container {
+                gap: 30px;
+                justify-content: center;
+
+                .nav {
+                    display: none;
+                }
+
+                .hamburger {
+                    color: white;
+                    display: flex;
+                }
+            }
+        }
+    }
+}
